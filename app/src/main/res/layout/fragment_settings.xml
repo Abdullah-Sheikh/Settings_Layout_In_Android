@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/chunkfive_regular"
+            android:text="All the app settings"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="normal" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/seguisb"
+                android:text="You can change your personal settings  "
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/seguisb"
+                android:text="@string/here"
+                android:textColor="#027BFE"
+                android:textSize="16dp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:weightSum="10"
+            android:background="@drawable/bg_light_blue"
+            android:orientation="horizontal"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="2"
+                android:foregroundGravity="center_vertical"
+                android:layout_width="0dp"
+                android:layout_height="59dp"
+                android:src="@drawable/avatar" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="7.5"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="4"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:text="Johanna de Boer"
+                        android:textSize="16dp"
+                        android:fontFamily="@font/seguisb"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        />
+                    <View
+
+                        android:layout_gravity="bottom"
+                        android:layout_width="2dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="18dp"
+                        android:background="#81BDFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/seguisb"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:layout_gravity="bottom"
+                        android:text="37 years"
+                        android:textSize="18dp"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        />
+                    <View
+                        android:layout_gravity="bottom"
+                        android:layout_width="2dp"
+                        android:layout_margin="5dp"
+                        android:layout_height="18dp"
+                        android:background="#81BDFF"/>
+
+                    <ImageView
+                        android:layout_marginTop="2dp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_female_24"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoeuib"
+                        android:text="ACCOUNT"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:textColor="#81BDFF"/>
+
+                    <ImageView
+                        android:layout_marginTop="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/flower_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/segoeuib"
+                        android:text="FREE"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="top"
+                        android:gravity="top"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/bg_dark_blue"
+            android:layout_width="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="vertical"
+            android:layout_height="141dp">
+
+            <TextView
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Become a VIP, get more clients!"
+                android:textSize="20dp"
+                android:fontFamily="@font/chunkfive_regular"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bg_light_white"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:text="\u2713 Upgrade Now"
+                android:textAllCaps="true"
+                android:fontFamily="@font/seguisb"
+                android:textColor="#027BFE"
+                android:textSize="20dp"
+                android:layout_marginLeft="16dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_light_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dark_blue_top_round_bg"
+                    android:fontFamily="@font/chunkfive_regular"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="General"
+
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/setting_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Most common settings"
+                    android:textColor="#81BDFF"
+                    android:gravity="center"
+
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_extra_light_blue"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID Check"
+                    android:textColor="@color/white"
+                    android:background="@drawable/light_blue_top_round_bg"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="20dp"
+                    android:fontFamily="@font/chunkfive_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/id_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verify your identity"
+                    android:textColor="#0262CB"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_light_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prefs"
+                    android:textColor="@color/white"
+                    android:background="@drawable/extra_light_blue_top_round_bg"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="22dp"
+                    android:fontFamily="@font/chunkfive_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/prefs_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your personal preferences"
+                    android:textColor="#81BDFF"
+                    android:gravity="center"
+
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_extra_light_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Booking"
+                    android:textColor="@color/white"
+                    android:background="@drawable/light_blue_top_round_bg"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="22dp"
+                    android:fontFamily="@font/chunkfive_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/booking_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for your bookings"
+                    android:textColor="#0262CB"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_light_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:background="@drawable/dark_blue_top_round_bg"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="22dp"
+                    android:fontFamily="@font/chunkfive_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/health_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About your   body"
+                    android:textColor="#81BDFF"
+                    android:gravity="center"
+
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="154dp"
+                android:background="@drawable/bg_extra_light_blue"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recover"
+                    android:textColor="@color/white"
+                    android:background="@drawable/light_blue_top_round_bg"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="22dp"
+                    android:fontFamily="@font/chunkfive_regular"
+                    />
+
+                <ImageView
+                    android:layout_width="39dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/recover_icon"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recover your account"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+
+                    android:textSize="14dp"
+                    android:fontFamily="@font/segoeui"
+                    />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/chunkfive_regular"
+            android:text="Account recovery"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="normal" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="16dp"
+            android:fontFamily="@font/seguisb"
+            android:text="Lost your account or credentials?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:fontFamily="@font/seguisb"
+            android:text="No worry, you can recover it."
+            android:textColor="#666666"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="16dp"
+            android:drawableTint="#027BFE"
+            android:drawablePadding="5dp"
+            android:textSize="14dp"
+            android:textColor="#027BFE"
+            android:drawableLeft="@drawable/recover_icon"
+            android:layout_height="wrap_content"
+            android:text="Recover"
+            android:background="@drawable/bg"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
